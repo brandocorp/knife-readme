@@ -2,10 +2,10 @@
 
 <%= metadata.description %>
 
-# Requirements
+## Requirements
 
 <%- unless metadata.platforms.empty? %>
-## Platforms
+### Platforms
 
   <%- metadata.platforms.each do |name, version| %>
 * <%= name %> <%= version %>
@@ -13,7 +13,7 @@
 
 <%- end %>
 <%- unless metadata.dependencies.empty? %>
-## Dependencies
+### Dependencies
 
   <%- metadata.dependencies.each do |name, version| %>
 * `<%= name %> <%= version %>`
@@ -21,7 +21,7 @@
 
 <%- end %>
 <%- unless metadata.recommendations.empty? %>
-## Recommendations
+### Recommendations
 
   <% metadata.recommendations.each do |name, version| %>
 * `<%= name %> <%= version %>`
@@ -29,7 +29,7 @@
 
 <%- end %>
 <%- unless metadata.suggestions.empty? %>
-## Suggestions
+### Suggestions
 
   <%- metadata.suggestions.each do |name, version| %>
 * `<%= name %> <%= version %>`
@@ -37,14 +37,14 @@
 
 <%- end %>
 <%- unless metadata.conflicting.empty? %>
-## Conflicts
+### Conflicts
 
   <%- metadata.conflicting.each do |name, version| %>
 * `<%= name %>` `<%= version %>`
   <%- end %>
 
 <%- end %>
-# Attributes
+## Attributes
 
 <%- metadata.attributes.each do |name, data| %>
 * `node['<%= name.split('/').join('][') %>']` - <%= data[:description] %>
@@ -59,21 +59,22 @@
   <%- end %>
 <%- end %>
 
-# Recipes
+## Recipes
 
 <%- metadata.recipes.each do |name, description| %>
 * `<%= name %>` - <%= description %>
 <%- end %>
 
-# Usage
+## Usage
 
 Just include `recipe[<%= metadata.name %>]` in your node's `run_list`
 
-# License and Authors
+## License and Authors
 
 - Author: <%= metadata.maintainer %> (<<%= metadata.maintainer_email %>>)
 
 ```text
+
 Copyright (C) <%= Time.now.year %> <%= metadata.maintainer %>
 
 <%= metadata.license %>

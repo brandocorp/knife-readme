@@ -2,24 +2,24 @@
 
 Provides Support for Bozo
 
-# Requirements
+## Requirements
 
-## Platforms
+### Platforms
 
 * centos >= 0.0.0
 * redhat >= 0.0.0
 * oracle >= 0.0.0
 * ubuntu >= 12.04
 
-## Dependencies
+### Dependencies
 
 * `clown_car ~> 1.0.0`
 
-## Recommendations
+### Recommendations
 
 * `clown_college >= 0.0.0`
 
-# Attributes
+## Attributes
 
 * `node['bozomatic][shoe_size']` - The required shoe size
   * Type: `string`
@@ -38,21 +38,22 @@ Provides Support for Bozo
   * Default: ``
   * Requirement: `optional`
 
-# Recipes
+## Recipes
 
 * `bozomatic::prepare_show` - Prepares for the show
 * `bozomatic::makeup` - Applies all required makeup
 * `bozomatic::clown_shoes` - Finds the requisite pair of clown shoes
 
-# Usage
+## Usage
 
 Just include `recipe[bozomatic]` in your node's `run_list`
 
-# License and Authors
+## License and Authors
 
 - Author: Bozo D. Clown (<bozo@clownshoes.com>)
 
 ```text
+
 Copyright (C) 2014 Bozo D. Clown
 
 Licensed under the Apache License, Version 2.0 (the "License");
