@@ -34,6 +34,7 @@ $ knife cookbook create bozomatic
 ```
 
 Define your cookbooks [metadata](/examples/metadata.rb/)
+
 Generate your base README.md from your metadata
 
 > *Warning*: This operation is currently destructive!
