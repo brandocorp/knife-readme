@@ -67,12 +67,14 @@
 
 # Usage
 
-Just include `<%= metadata.name %>` in your node's `run_list`
+Just include `recipe[<%= metadata.name %>]` in your node's `run_list`
 
 # License and Authors
 
-Author:: <%= metadata.maintainer %> (<<%= metadata.maintainer_email %>>)
+- Author: <%= metadata.maintainer %> (<<%= metadata.maintainer_email %>>)
 
-Copyright:: <%= Time.now.year %>, <%= metadata.maintainer %>
+```text
+Copyright (C) <%= Time.now.year %> <%= metadata.maintainer %>
 
 <%= metadata.license %>
+```
