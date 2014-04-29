@@ -46,13 +46,14 @@ Provides Support for Bozo
 
 # Usage
 
-Just include `bozomatic` in your node's `run_list`
+Just include `recipe[bozomatic]` in your node's `run_list`
 
 # License and Authors
 
-Author:: Bozo D. Clown (<bozo@clownshoes.com>)
+- Author: Bozo D. Clown (<bozo@clownshoes.com>)
 
-Copyright:: 2014, Bozo D. Clown
+```text
+Copyright (C) 2014 Bozo D. Clown
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -65,3 +66,5 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+```
